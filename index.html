@@ -18,33 +18,17 @@
                     color="blue"
                     rotation="-90 0 0"
                     ></a-text>
-             <script
-             var textureLoader = new THREE.TextureLoader();
-             var map = textureLoader.load (bilder_ar/Steve.png);
-             var material = new THREE.MeshPhongMaterial({map: map});
-             
-             var loader = new THREE.OBJLoader();
-             loader.load (bilder_ar/steve.obj) function ( object ) {
-             
-               object.traverse( function ( node ) {
-             
-                 if ( node.isMesh ) node.material = material;
-             
-               } );
-             
-               
-               scene.add( object );
-             } );>
-        </script>
+             <a-entity
+            color="green"
+            position="0 0 0"
+            scale="0.01, 0.01, 0.01"
+            glb-model="glb: url(bilder_ar/banannt.glb) ;" 
+            
+            rotation="0 0 0">
+        </a-entity>
         
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
-color="green"
-position="0 0 0"
-scale="0.01, 0.01, 0.01"
-glb-model="glb: url(bilder_ar/banannt.glb) ;" 
-
-rotation="0 0 0">

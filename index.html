@@ -18,7 +18,7 @@
                     color="blue"
                     rotation="-90 0 0"
                     ></a-text>
-             <a-entity
+             <script
              var textureLoader = new THREE.TextureLoader();
              var map = textureLoader.load (bilder_ar/Steve.png);
              var material = new THREE.MeshPhongMaterial({map: map});
@@ -35,7 +35,7 @@
                
                scene.add( object );
              } );>
-        </a-entity>
+        </script>
         
         </a-marker>
         <a-entity camera></a-entity>

@@ -8,13 +8,7 @@
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-       
-      
-      <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
-      </a-assets>
-      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
-    </a-scene>
+ 
             
         </a-marker>
         <a-entity camera></a-entity>
@@ -46,3 +40,8 @@
 
 
 <a-scene background="color: #ECECEC">
+       <a-assets>
+        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+    </a-scene>

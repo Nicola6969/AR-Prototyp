@@ -9,13 +9,18 @@
     <a-scene embedded arjs>
         <a-marker preset="hiro">
              
+               <a-assets>
+    <a-asset-item id="flag" src="bilder_ar/flag-glb/flag.glb"></a-asset-item>
+  </a-assets>
               
               <a-entity gltf-model="url(bilder_ar/flag-glb/flag.glb)"></a-entity>
- 
+              
+               <a-entity gltf-model="#flag" animation-mixer></a-entity>
+   
            </a-marker>
           
         <a-entity camera></a-entity>
-        <a-marker preset="c">
+        <a-marker preset="C">
               
      <a-entity obj-model="obj: url(bilder_ar/dog-obj/dog.obj); mtl: url(bilder_ar/dog-obj/dog.mtl)"
            scale="0.02 0.02 0.02"

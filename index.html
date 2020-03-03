@@ -9,14 +9,14 @@
     <a-scene embedded arjs>
         <a-marker preset="hiro">
               
-              <a-entity gltf-model="url(bilder_ar/flag-glb/flag.glb)"></a-entity>
+              <a-entity id="flag" gltf-model="url(bilder_ar/flag-glb/flag.glb)"></a-entity>
               
-               <a-entity gltf-model="url(bilder_ar/flag-glb/flag.glb)" animation-mixer="clip: run_*"></a-entity>
+               <a-entity gltf-model= "#flag" animation-mixer ></a-entity>
    
            </a-marker>
           
         <a-entity camera></a-entity>
-        <a-marker preset="kanji">
+        <a-marker preset="letterC">
               
      <a-entity obj-model="obj: url(bilder_ar/dog-obj/dog.obj); mtl: url(bilder_ar/dog-obj/dog.mtl)"
            scale="0.02 0.02 0.02"

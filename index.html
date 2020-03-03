@@ -18,7 +18,28 @@
           
         <a-entity camera></a-entity>
         <a-marker preset="kanji">
-            <a-text value="Informatiker" 
+              
+              
+           <a-scene>
+  <a-assets>
+    <a-asset-item id="tree-obj" src="/path/to/tree.obj"></a-asset-item>
+    <a-asset-item id="tree-mtl" src="/path/to/tree.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+</a-scene>
+
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+  
+</body>
+</html>
+
+
+
+
+   <a-text value="Informatiker" 
                     position="-1 2.5 0"
                     color="blue"
                     rotation="-90 0 0"
@@ -31,20 +52,3 @@
             scale="0.30 0.30 0.30"
              >
         </a-entity>
-
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
-  
-</body>
-</html>
-
-
-
- 
-              <a-assets>
-    <a-asset-item id="skull-obj" src="bilder_ar/skull.obj"></a-asset-item>
-    <a-asset-item id="skull-mtl" src="bilder_ar/skull.mtl"></a-asset-item>
-  </a-assets>
-
-  

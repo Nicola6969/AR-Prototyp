@@ -9,7 +9,7 @@
     <a-scene embedded arjs>
         <a-marker preset="hiro">
              
- 
+ <a-entity obj-model="obj: skull.obj; mtl: skull.mtl"></a-entity>
 
             
         </a-marker>
@@ -23,7 +23,7 @@
                     ></a-text>
              
               <a-entity
-            obj-model="obj: url(bilder_ar/);" 
+            obj-model="obj: url();" 
             
             rotation="-90 0 0"
             scale="0.30 0.30 0.30"
@@ -45,4 +45,4 @@
     <a-asset-item id="skull-mtl" src="bilder_ar/skull.mtl"></a-asset-item>
   </a-assets>
 
-  <a-entity obj-model="obj: #skull-obj; mtl: #skull-mtl"></a-entity>
+  

@@ -12,5 +12,5 @@ newmtl Dog
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.0900 0.0900 0.0900
 	Ke 0.0000 0.0000 0.0000
-	map_Ka Dog_diffuse.jpg
-	map_Kd Dog_diffuse.jpg
+	map_Ka dog.jpg
+	map_Kd dog.jpg

@@ -8,33 +8,19 @@
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-              
-              <a-assets>
-    <a-asset-item id="skull-obj" src="bilder_ar/skull.obj"></a-asset-item>
-    <a-asset-item id="skull-mtl" src="bilder_ar/skull.mtl"></a-asset-item>
-  </a-assets>
-
-  <a-entity obj-model="obj: #skull-obj; mtl: #skull-mtl"></a-entity>
- 
-
-            
-        </a-marker>
+             
+ <a-entity obj-model="obj: url(bilder_ar/skull.obj); mtl: url(bilder_ar/skull.mtl)"
+           scale="0.05 0.05 0.05"
+           rotation="-180 0 0"
+           ></a-entity>
+           </a-marker>
           
         <a-entity camera></a-entity>
         <a-marker preset="kanji">
-            <a-text value="Informatiker" 
-                    position="-1 2.5 0"
-                    color="blue"
-                    rotation="-90 0 0"
-                    ></a-text>
-             
-              <a-entity
-            obj-model="obj: url(bilder_ar/);" 
-            
-            rotation="-90 0 0"
-            scale="0.30 0.30 0.30"
-             >
-        </a-entity>
+              
+               
+        
+          
 
         </a-marker>
         <a-entity camera></a-entity>
@@ -45,3 +31,17 @@
 
 
 
+<a-text value="Informatiker" 
+                    position="-1 2.5 0"
+                    color="blue"
+                    rotation="-90 0 0"
+                    ></a-text>
+             
+              <a-entity
+            obj-model="obj: url();" 
+            
+            rotation="-90 0 0"
+            scale="0.30 0.30 0.30"
+             >
+        </a-entity>
+  

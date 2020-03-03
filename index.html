@@ -8,14 +8,10 @@
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-             
-               <a-assets>
-    <a-asset-item id="flag" src="bilder_ar/flag-glb/flag.glb"></a-asset-item>
-  </a-assets>
               
               <a-entity gltf-model="url(bilder_ar/flag-glb/flag.glb)"></a-entity>
               
-               <a-entity gltf-model="#flag" animation-mixer></a-entity>
+               <a-entity gltf-model="url(bilder_ar/flag-glb/flag.glb)" animation-mixer></a-entity>
    
            </a-marker>
           

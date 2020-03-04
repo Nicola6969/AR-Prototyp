@@ -40,7 +40,9 @@
         <a-entity camera></a-entity>
         <a-marker preset="hiro">
               
-             <a-entity glft-model="url(bilder_ar/bird-glft/scene.glft)" scale="0.005 0.005 0.005><a-entity>
+             <a-entity id="bird" gltf-model="url(bilder_ar/bird-gltf/scene.gltf)"></a-entity>
+              
+               <a-entity gltf-model= "#bird" animation-mixer="Take 001" ></a-entity>
               
 
    

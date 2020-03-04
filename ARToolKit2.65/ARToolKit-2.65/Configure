@@ -203,3 +203,6 @@ echo "  create include/AR/config.h"
 sed -f $SED <include/AR/config.h.in > include/AR/config.h
 
 echo "Done."
+
+arSetPatternDetectionMode(arHandle, AR_MATRIX_CODE_DETECTION);
+arSetMatrixCodeType(arHandle, AR_MATRIX_CODE_3x3);

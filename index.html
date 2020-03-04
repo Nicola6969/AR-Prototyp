@@ -8,15 +8,7 @@
     <a-scene embedded arjs>
         <a-marker preset="hiro">
               
-              
-      <a-entity gltf-model="url(https://cdn.glitch.com/1061d524-9d0f-4b25-97fd-48ebd0fce63c%2Fsceneglb.glb?1546534633849)" scale="0.001 0.001 0.001" animation-mixer="clip:Take 001; loop:2; timeScale: 0.5; crossFadeDuration: 1"></a-entity>
-   
-           </a-marker>
-          
-        <a-entity camera></a-entity>
-        <a-marker preset="kanji">
-              
-     <a-entity obj-model="obj: url(bilder_ar/server-obj/server+console.obj); mtl: url(bilder_ar/server-obj/server+console.mtl)"
+          <a-entity obj-model="obj: url(bilder_ar/server-obj/server+console.obj); mtl: url(bilder_ar/server-obj/server+console.mtl)"
            scale="0.30 0.30 0.30"
            rotation="180 -180 -90"
            ></a-entity>
@@ -42,6 +34,16 @@
            ></a-entity>
 
 
+   
+           </a-marker>
+          
+        <a-entity camera></a-entity>
+        <a-marker preset="kanji">
+              
+     <a-assets>
+        <a-asset-item id="bird" response-type="arraybuffer" src="https://cdn.glitch.com/1061d524-9d0f-4b25-97fd-48ebd0fce63c%2Fsceneglb.glb?1546534633849"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#bird" scale="0.001 0.001 0.001" animation-mixer="clip:Take 001; loop:2; timeScale: 0.5; crossFadeDuration: 1"></a-entity>
 
         </a-marker>
         <a-entity camera></a-entity>
@@ -58,3 +60,8 @@
            scale="0.01 0.01 0.01"
            rotation="-90 -180 0"
            ></a-entity>
+
+
+
+
+ 

@@ -3,13 +3,14 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
       <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
-
     
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
         <a-marker preset="hiro">
               
+              <a-entity id="flag" gltf-model="url(bilder_ar/flag-glb/flag.glb)"></a-entity>
               
+               <a-entity gltf-model= "#flag" animation-mixer ></a-entity>
    
            </a-marker>
           
@@ -20,7 +21,7 @@
            scale="0.30 0.30 0.30"
            rotation="180 -180 -90"
            ></a-entity>
-              
+
               <a-entity obj-model="obj: url(bilder_ar/skull-obj/skull.obj); mtl: url(bilder_ar/skull-obj/skull.mtl)"
            scale="0.05 0.05 0.05"
            rotation="-180 0 0"
@@ -33,15 +34,15 @@
            rotation="180 -180 -90"
            position="0.6 0.2 0"
            ></a-entity>
-              
-              
+
+
               <a-entity obj-model="obj: url(bilder_ar/steve-obj/steve.obj); mtl: url(bilder_ar/steve-obj/steve.mtl)"
            scale="0.15 0.15 0.15"
            rotation="-180 -90 -90"
            position="0 0 0"
            ></a-entity>
 
-          
+
 
         </a-marker>
         <a-entity camera></a-entity>
@@ -49,26 +50,12 @@
   
 </body>
 </html>
-
-
-
 <a-text value="Informatiker" 
                     position="-1 2.5 0"
                     color="blue"
                     rotation="-90 0 0"
                     ></a-text>
-
-
             <a-entity obj-model="obj: url(bilder_ar/legofigur-obj/lego.obj); mtl: url(bilder_ar/legofigur-obj/lego.mtl)"
            scale="0.01 0.01 0.01"
            rotation="-90 -180 0"
            ></a-entity>
-<script src="https://threejs.org/build/three.js"></script>
-
-
-
-
-
-<a-entity id="bird" gltf-model="url(bilder_ar/bird-gltf/scene.gltf)"></a-entity>
-              
-               <a-entity gltf-model= "#bird" animation-mixer="Take 001" ></a-entity>

@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
 
-  <!-- Mit den beiden Scripts wird die benötigte Open Soure Software verlinkt. Keine Änderung nötig.-->  
+    
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
-   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
   
-  <!-- Hier beginnt die eigentliche Website. Du kannst statt 'Beispiel für eine webbasierte Augmented Reality' auch einen anderen Titel wählen.  -->  
-<body style="margin : 0px; overflow: hidden; font-family: Monospace;"><div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;">
-	Beispiel für webbasierte Augmented Reality
-</div>
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
 
-  <!-- Mit dem folgenden Code wird die Szene gestartet und die Kamera aktiviert. Keine Änderung nötig. -->
   	 <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
- <!-- Mit dem folgenden Code wird als 'Auslöser' das Hiro-Zeichen festgelegt. Dieses muss gescannt werden, um den AR-Inhalt zu öffnen. 
-Alternativ kannst Du das Kanji-Zeichen wählen - oder einen eigenen Marker. -->
+
+
   <a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/pattern-inf.gat_pattern.patt">   
-    
-  <!-- Mit dem folgenden Code wird der AR-Inhalt eingefügt. 
-Du kannst die Farbe ändern.
- Mit 'rotation' wir der Würfel auf allen drei Achsen gedreht - in unserem Beispiel steht er auf der Spitze.
--->  
+      
   <a-box color="blue" rotation="45 45 45"></a-box>
 
 </a-marker>

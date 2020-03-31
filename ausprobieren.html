@@ -3,14 +3,12 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
       <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>   
-<body style="margin : 0px; overflow: hidden; font-family: Monospace;"><div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;">
-	AR.JS Beispiel mit Objekt
-</div>
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
     <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
-	<a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt"></a-marker>
-        <a-box postition="0 0 0" color="green"></a-box>
+	  <a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/pattern-inf.gat_pattern.patt"></a-marker>
+        <a-box postition="0 0 0" color="red"></a-box>
      
-     <a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt"></a-marker>
+   
    <a-entity camera></a-entity>
 	</a-scene>
 

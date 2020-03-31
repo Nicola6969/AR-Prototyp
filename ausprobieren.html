@@ -7,10 +7,12 @@
 	AR.JS Beispiel mit Objekt
 </div>
     <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
-     <a-box postition="0 1.6 0" color="lightblue"></a-box>
+	<a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt"></a-marker>
+        <a-box postition="0 0 0" color="green"></a-box>
      
-     <a-marker-camera type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt"></a-marker-camera>
-    </a-scene>
+     <a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt"></a-marker>
+   <a-entity camera></a-entity>
+	</a-scene>
 
 </body>
 </html>

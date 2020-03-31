@@ -13,9 +13,7 @@
   <!-- Mit dem folgenden Code wird die Szene gestartet und die Kamera aktiviert. Keine Änderung nötig. -->
   	 <a-scene embedded arjs>
 
- <!-- Mit dem folgenden Code wird als 'Auslöser' das Hiro-Zeichen festgelegt. Dieses muss gescannt werden, um den AR-Inhalt zu öffnen. 
-Alternativ kannst Du das Kanji-Zeichen wählen - oder einen eigenen Marker. -->
-  <a-marker type="pattern" url="https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/pattern/pattern-inf.gat_pattern.patt">   
+   
     
   <!--  Mit dem folgenden Code wird der AR-Inhalt eingefügt. 
 Du kannst die Farbe ändern.
@@ -25,7 +23,11 @@ Du kannst die Farbe ändern.
 
     <a-entity gltf-model="url(https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/bilder_ar/steve-gltf/scene.gltf)" scale="0.005 0.005 0.005"></a-entity>
 	  
-<a-entity camera></a-entity>
+		  <!-- Mit dem folgenden Code wird als 'Auslöser' das Hiro-Zeichen festgelegt. Dieses muss gescannt werden, um den AR-Inhalt zu öffnen. 
+Alternativ kannst Du das Kanji-Zeichen wählen - oder einen eigenen Marker. -->
+  <a-marker type="pattern" url="https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/pattern/pattern-inf.gat_pattern.patt">
+		 
+
 </a-scene>
 </body>
 </html>

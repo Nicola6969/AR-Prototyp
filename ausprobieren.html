@@ -4,13 +4,16 @@
       <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>   
 <body style="margin : 0px; overflow: hidden; font-family: Monospace;">
-    <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
-	  <a-marker type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/pattern-inf.gat_pattern.patt"></a-marker>
-        <a-box postition="0 0 0" color="red"></a-box>
-     
-   
-   <a-entity camera></a-entity>
-	</a-scene>
+    !-- Mit dem folgenden Code wird AR.JS aktiviert. Keine Änderung nötig. -->
+  	<a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
+
+<a-entity gltf-model="url(https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf)" rotation="0 270 0">
+</a-entity>
+
+<!-- Hier legst Du den Marker fest. Nähere Informationen dazu im Blogbeitrag -->
+      <a-marker-camera type="pattern" url="https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/pattern-inf.gat_pattern.patt"></a-marker-camera>
+     		
+  </a-scene>
 
 </body>
 </html>

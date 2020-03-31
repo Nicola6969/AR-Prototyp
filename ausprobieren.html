@@ -4,16 +4,15 @@
       <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>   
 <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-	    
-	
-     <a-marker-camera type="pattern" url="(pattern/inf.gat_pattern.patt)"></a-marker-camera>
+    <a-scene embedded arjs="debugEnabled: flase; souceType: webcam;">
      <a-box color="red"></a-box>
      <a-text value="Informatiker" 
      position="-1 2.5 0"
      color="blue"
      rotation="-90 0 0"
      ></a-text>
+     <a-marker-camera type="pattern" url="(https://github.com/Nicola6969/AR-Prototyp/blob/master/pattern/inf.gat_pattern.patt)"></a-marker-camera>
+
     </a-scene>
 
 </body>

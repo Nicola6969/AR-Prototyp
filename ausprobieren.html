@@ -5,6 +5,7 @@
   <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
   <!-- Hier beginnt die eigentliche Website. Du kannst statt 'Beispiel für eine webbasierte Augmented Reality' auch einen anderen Titel wählen.  -->  
 <body style="margin : 0px; overflow: hidden; font-family: Monospace;"><div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;">
 	Beispiel für webbasierte Augmented Reality
@@ -21,8 +22,10 @@ Du kannst die Farbe ändern.
 
  <a-box color="blue" rotation="45 45 45"></a-box> --> 
 
-    <a-entity gltf-model="url(https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/bilder_ar/steve-gltf/scene.gltf)" scale="0.002 0.002 0.002" rotation="180 90 90" animation-mixer="clip: Take.001; loop: 2; timeScale: 5;  
-	crossFadeDuration: 1"></a-entity>
+   <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
+event-set__enter="_event: mouseenter; color: #8FF7FF"
+event-set__leave="_event: mouseleave; color: #4CC3D9"></a-box>
+
 	  
 		  <!-- Mit dem folgenden Code wird als 'Auslöser' das Hiro-Zeichen festgelegt. Dieses muss gescannt werden, um den AR-Inhalt zu öffnen. 
 Alternativ kannst Du das Kanji-Zeichen wählen - oder einen eigenen Marker. -->

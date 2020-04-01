@@ -1,9 +1,10 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
 <body>
-  <a-scene>
+  <a-scene embedded arjs>
     <a-marker preset="kanji">
    <a-entity gltf-model-legacy="url(bilder_ar/bird-gltf/scene.gltf)" scale="0.01 0.01 0.01"></a-entity>
+   
     </a-marker>
       
       <a-entity camera></a-entity>

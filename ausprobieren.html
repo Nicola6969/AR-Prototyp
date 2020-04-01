@@ -1,20 +1,34 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="style.css"/>
-      <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>   
-<body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-	    
-	
-     <a-marker-camera type="pattern" url="(pattern/inf.gat_pattern.patt)"></a-marker-camera>
-     <a-box color="red"></a-box>
-     <a-text value="Informatiker" 
-     position="-1 2.5 0"
-     color="blue"
-     rotation="-90 0 0"
-     ></a-text>
-    </a-scene>
 
+  <!-- Mit den beiden Scripts wird die benötigte Open Soure Software verlinkt. Keine Änderung nötig.-->  
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+ <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+  <!-- Hier beginnt die eigentliche Website. Du kannst statt 'Beispiel für eine webbasierte Augmented Reality' auch einen anderen Titel wählen.  -->  
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;"><div style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;">
+	Beispiel für webbasierte Augmented Reality
+</div>
+
+  <!-- Mit dem folgenden Code wird die Szene gestartet und die Kamera aktiviert. Keine Änderung nötig. -->
+  	 <a-scene embedded arjs>
+
+   
+    
+  <!--  Mit dem folgenden Code wird der AR-Inhalt eingefügt. 
+Du kannst die Farbe ändern.
+ Mit 'rotation' wir der Würfel auf allen drei Achsen gedreht - in unserem Beispiel steht er auf der Spitze.
+
+ <a-box color="blue" rotation="45 45 45"></a-box> --> 
+
+    <a-entity gltf-model="url(https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/bilder_ar/steve-gltf/scene.gltf)" scale="0.002 0.002 0.002" rotation="180 90 90" animation-mixer="clip: Take.001; loop: 2; timeScale: 5;  
+	crossFadeDuration: 1"></a-entity>
+	  
+		  <!-- Mit dem folgenden Code wird als 'Auslöser' das Hiro-Zeichen festgelegt. Dieses muss gescannt werden, um den AR-Inhalt zu öffnen. 
+Alternativ kannst Du das Kanji-Zeichen wählen - oder einen eigenen Marker. -->
+  <a-marker-camera type="pattern" url="https://raw.githubusercontent.com/Nicola6969/AR-Prototyp/master/pattern/pattern-inf.gat_pattern.patt"></a-marker-camera>
+		 
+
+</a-scene>
 </body>
 </html>

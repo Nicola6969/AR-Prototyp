@@ -4,6 +4,7 @@
       <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
 	    <a-marker preset="kanji">
@@ -21,13 +22,14 @@
       
         <a-marker preset="hiro">
               
-		
-		<a-entity obj-model="obj: url(bilder_ar/steve-obj/steve.obj); mtl: url(bilder_ar/steve-obj/steve.mtl)"
-           scale="0.15 0.15 0.15"
-           rotation="180 -90 -90"
-           position="0 0 0"
-           ></a-entity>
-          
+		 <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"
+event-set__enter="_event: mousenter; color: #8FF7FF"
+event-set__leave="_event: mousenter; color: #4CC3D9"></a-box>
+
+	
+          <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>  
        
 	</a-marker>
 	<a-entity camera></a-entity>

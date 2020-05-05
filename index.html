@@ -14,14 +14,150 @@
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-<script src="event.js"></script>
+<script src="events.js"></script>
 <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
 
-<body style="text-align:center;">
+<body style='margin : 0px; overflow: hidden;'>
 
-<div id="click">Klicke Mich!!!
-  <span id="sprechblase">Tooltip text</span>
-</div>
+    <a-scene embedded arjs='sourceType: webcam;'>
+
+        <a-assets>
+            <a-asset-item id="maschine" src="models/automatiker/maschine/maschine.glb">
+            </a-asset-item>
+            <a-asset-item id="dance" src="models/schluss/dance/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="zombie" src="models/zombie/zombie/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="camera_robot" src="models/mediamatiker/camera_robot/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="pc" src="models/informatiker/pc/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="vent" src="models/kv/ventilator/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="hebel" src="models/polymechaniker/hebel/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="zange" src="models/polymechaniker/zange/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="drohne" src="models/mediamatiker/dji_spark/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="plastic_animiert" src="models/kunststofftechnologe/plastic_animiert/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="plastic1" src="models/kunststofftechnologe/plastic1/plastic.glb">
+            </a-asset-item>
+            <a-asset-item id="drucker" src="models/kunststofftechnologe/3d_drucker/drucker.glb">
+            </a-asset-item>
+            <a-asset-item id="table" src="models/informatiker/table/scene.gltf">
+            </a-asset-item>
+            <a-asset-item id="setup_inf" src="models/informatiker/setup_inf/setup_inf.glb">
+            </a-asset-item>
+            <a-asset-item id="setup_media" src="models/mediamatiker/setup_media/setup_media.glb">
+            </a-asset-item>
+            <a-asset-item id="setup_konstruktion" src="models/konstrukteur/setup_konstr/setup_konstr.glb">
+            </a-asset-item>
+            <a-asset-item id="setup_kv" src="models/kv/setup_kv/setup_kv.glb">
+            </a-asset-item>
+            <a-asset-item id="steve" src="bilder_ar/steve-gltf/scene.gltf">
+            </a-asset-item>
+        </a-assets>
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-admin.patt">
+            <a-entity gltf-model="#dance" animation-mixer="clip: mixamo.com; loop:2; timeScale: 1;" scale="0.2 0.2 0.2"
+                rotation="-90 0 0" position="0 0 0"
+                position="0 0 0" ></a-entity>
+            <a-text id="text" value="Wibilea 
+                               Informatiker 
+                               Basislehrjahr" position="0 0 0" color="blue" background-color="red" rotation="-90 0 0"
+                scale="0.3 0.3 0.3" onClick="location.href='https://www.wibilea.ch/lehrberufe/automatiker/'"></a-text>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-automation.patt">
+            <a-entity gltf-model="#maschine" animation-mixer="clip: Take 001; loop:2; timeScale: 4;"
+                scale="0.01 0.01 0.01" rotation="-90 0 0"></a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-informatik.patt">
+            <!--  <a-entity gltf-model="#pc" animation-mixer="clip: Take 001; loop:2; timeScale: 1;" scale="0.02 0.02 0.02"
+            rotation="-100 0 0" position="1.4 -0.5 -0.85"></a-entity>
+            <a-entity gltf-model="#ultra_wide" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0.8 -0.5 -0.6"></a-entity>
+            <a-entity gltf-model="#table" scale="0.007 0.007 0.007" rotation="0 270 90" position="1 0 0"></a-entity>-->
+            <a-entity gltf-model="#setup_inf" scale="1 1 1" rotation="0 270 90" position="1 0 0"></a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-konstruktion.patt">
+            <a-entity gltf-model="#setup_konstruktion" scale="1 1 1" rotation="0 270 90" position="-1.5 0.5 0">
+            </a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-kunststofftechnologe.patt">
+            <a-entity gltf-model="#plastic_animiert" animation-mixer="clip: CINEMA_4D_Main; loop:2; timeScale: 2;"
+                scale="0.7 0.7 0.7" rotation="90 180 180" position="0 0 0"></a-entity>
+            <a-entity gltf-model="#plastic1" scale="0.004 0.004 0.004" rotation="90 180 180" position="-0.5 0 0">
+            </a-entity>
+            <a-entity gltf-model="#drucker" scale="0.004 0.004 0.004" rotation="90 180 180" position="0.5 0 0">
+            </a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-kv.patt">
+            <a-entity gltf-model="#vent" animation-mixer="clip: Take 001; loop:2; timeScale: 1;"
+                scale="0.005 0.005 0.005" rotation="-90 0 0" position="0 0 0"></a-entity>
+            <a-entity gltf-model="#setup_kv" scale="1 1 1" rotation="0 270 90" position="-1.5 0.5 0"></a-entity>
+            <a-entity position="0 0 0" onClick="location.href='https://www.wibilea.ch/lehrberufe/kauffrau/'" geometry="primitive: box" material="src: img/poly.PNG"></a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-mediamatik.patt">
+            <a-entity gltf-model="#camera_robot" animation-mixer="clip: Take 001; loop:2; timeScale: 2;"
+                scale="0.02 0.02 0.02" rotation="90 180 180" position="0.5 0 0"></a-entity>
+            <a-entity gltf-model="#drohne" animation-mixer="clip: Default Take ; loop:2; timeScale: 2;"
+                scale="0.05 0.05 0.05" rotation="90 180 180" position="0 0 0"></a-entity>
+            <a-entity gltf-model="#setup_media" scale="1 1 1" rotation="0 270 90" position="1 0 0"></a-entity>
+        </a-marker>
+
+
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-polymechanik.patt">
+            <a-entity gltf-model="#zombie" animation-mixer="clip: z_armature|Push-up; loop:2; timeScale: 2;"
+                scale="0.2 0.2 0.2" rotation="-90 0 0" position="-0.5 0 0"></a-entity>
+            <a-entity gltf-model="#hebel" animation-mixer="clip: CINEMA_4D_Main; loop:2; timeScale: 2;"
+                scale="0.02 0.02 0.02" rotation="-90 0 0" position="0 0 0"></a-entity>
+            <a-entity gltf-model="#zange" animation-mixer="clip: Default Take; loop:2; timeScale: 2;"
+                scale="0.4 0.4 0.4" rotation="0 0 0" position="0.5 0 0"></a-entity>
+        </a-marker>
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-end.patt">
+            
+        </a-marker>
+
+
+        <a-marker preset="custom" type="pattern" url="pattern/neue_marker_812/pattern-start.patt">
+            <!-- <a-entity gltf-model="#steve" animation-mixer="clip: Armature.001|Walk ; loop:2; timeScale: 2;"
+                scale="0.002 0.002 0.002" rotation="90 180 180" position="0 0 0"></a-entity>-->
+                <a-entity position="0 0 0" onClick="location.href='https://www.wibilea.ch/lehrberufe/polymechaniker/'" geometry="primitive: box" material="src: img/poly.PNG"></a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+            <a-camera><a-cursor></a-cursor></a-camera>
+    </a-scene>
 </body>
 
+</html>
 </html>

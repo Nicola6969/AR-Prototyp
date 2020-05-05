@@ -1,6 +1,7 @@
 $(function () {
-    $('#boxx').on('click', function () {
-            $('#kugel').css('color', 'blue');
+$('#').hide()
+    $('#').on('click', function () {
+            $('#').show('');
     }    
 );
 }

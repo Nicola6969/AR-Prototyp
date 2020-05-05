@@ -1,9 +1,9 @@
-.tooltip {
+/*.sprechblase {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
   }
-  .tooltip .tooltiptext {
+  .sprechblase .clickk {
     visibility: hidden;
     width: 180px;
     background-color: black;
@@ -12,7 +12,7 @@
     border-radius: 6px;
     padding: 5px 0;
     
-    /* Position the tooltip */
+     Position the tooltip 
     position: absolute;
     z-index: 1;
     bottom: 100%;
@@ -21,4 +21,4 @@
   }
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+  }*/

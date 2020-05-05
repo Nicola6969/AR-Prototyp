@@ -1,7 +1,7 @@
 $(function () {
-$('#').hide()
-    $('#').on('click', function () {
-            $('#').show('');
+$('#sprechblase').hide()
+    $('#click').on('click', function () {
+            $('#sprechblase').show('');
     }    
 );
 }

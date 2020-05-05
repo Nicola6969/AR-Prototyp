@@ -1,6 +1,6 @@
 $(function () {
 $('#sprechblase').hide()
-    $('#click').on('click', function () {
+    $('#box').on('click', function () {
             $('#sprechblase').show();
     }    
 );

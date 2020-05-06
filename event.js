@@ -6,6 +6,6 @@ $('#sprechblase').hide()
 );
 }
 );*/
-alert('alert befehl geändert')
+alert('eifach öppis')
 var el = document.querySelector('#cylinder');
 el.setAttribute('visible',false);

@@ -1,9 +1,9 @@
 var el = document.querySelector('#cylinder');
 el.setAttribute('visible',false);
 /*$(function () {
-$('#sprechblase').hide()
+$('#cylinder').hide()
     $('#box').on('click', function () {
-            $('#sprechblase').show();
+            $('#cylinder').show();
     }    
 );
 }

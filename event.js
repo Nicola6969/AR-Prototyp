@@ -9,4 +9,4 @@ $('#sprechblase').hide()
 var el = $('#cylinder');
 
 el.setAttribute('visible',false);
-alert('cih bims GaT')
+alert('alert befehl geändert')

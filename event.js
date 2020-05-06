@@ -6,6 +6,3 @@ $('#sprechblase').hide()
 );
 }
 );*/
-var el = document.querySelector('#cylinder');
-
-el.setAttribute('visible',false);

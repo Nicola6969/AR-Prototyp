@@ -8,5 +8,4 @@ $('#sprechblase').hide()
 );*/
 alert('alert befehl geändert')
 var el = document.querySelector('#cylinder');
-
 el.setAttribute('visible',false);

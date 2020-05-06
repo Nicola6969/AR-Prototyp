@@ -6,7 +6,7 @@ $('#sprechblase').hide()
 );
 }
 );*/
-var el = $('#cylinder');
+var el = document.querySelector('#cylinder');
 
 el.setAttribute('visible',false);
 alert('alert befehl geändert')

@@ -5,7 +5,7 @@ $('#sprechblase').hide()
     }    
 );
 }
-);
-var el = document.querySelector('#cylinder');
+);*/
+var el = $('#cylinder');
 
-el.setAttribute('visible',false);*/
+el.setAttribute('visible',false);
